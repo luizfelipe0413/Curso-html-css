@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens</title>
+</head>
+<body style="background-color: rgb(254, 153, 98);">
+    <h1 style="text-align: center;">Desafio com imagens dinâmmicas</h1>
+    <h2>Abaixo uma imagem que muda de acordo com a resolução da tela.</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png">
+        <img src="imagens/paisagem-g.png" alt="Imagem flexível!">
+    </picture>
+</body>
+</html>
