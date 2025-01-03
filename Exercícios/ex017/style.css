@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: linear-gradient(to left, #5E271D, #884C40);
+    /* 
+    Medidas Absolutas:
+    [cm, mm, in, px, pt, pc]
+
+    Medidas Relativas
+    em, ex, rem, vw(view width), vh(view height), %   
+
+    16px(valor padrão) = 1em
+    */
+
+    /* [Lighter - Normal - Bold - Bolder] */
+}
+h1, h2{
+    font-family: 'work sans', sans-serif;
+    text-align: center; 
+    font-weight: 600px;
+    font-size: 30px;
+    text-decoration: underline;
+    color: #B7DBCD;
+    /* font: normal 600 30px 'work sans', sans-serif; */
+
+}
+p{
+    font-family: sans-serif;
+    font-style: italic;
+    color:#56af8e;
+    text-align: justify;
+    /* shorthand font
+    Ordem:
+    ->font style -> font-weight -> font-size -> font-family   
+    */
+
+}
