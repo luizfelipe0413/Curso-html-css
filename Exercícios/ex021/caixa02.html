@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: wheat;
+            margin: auto;
+        }
+        header{
+            background-color: brown;
+            padding: 10px 10px;
+            text-align: center;
+            margin: 15px 30px;
+        }
+        nav > p > a{
+            text-decoration: none;
+            color: pink;
+            font-weight: bold;
+            margin-right: 50px;
+            font-size: 20px;
+        }
+        nav{
+            margin: auto;
+            border: 4px dotted black;
+            text-align: center;
+        }
+        article{
+            text-align: justify;
+            padding: 1px 15px;
+            background-color: white;
+            margin: 30px;
+        }
+        article > aside{
+            padding: 0px 30px;
+            background-color: rgb(100, 100, 100);
+            width: 290px;
+        }
+        footer > p{
+            padding: 5px 30px 50px 30px ;
+            background-color: brown;
+            margin: 0px;
+            text-align: right;
+
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site !</h1>
+        <nav>
+            <p>
+               | <a href="#" class="links">Início</a> |
+                <a href="#" class="links">Página-2</a> | 
+                <a href="#" class="links">Página-3</a> |
+                <a href="#" class="links">Página-4</a> |
+                <a href="#" class="links">Página-6</a> 
+            </p>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Notícias Misteriosas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a laudantium rerum perferendis consequuntur quod illum unde doloremque amet error qui, atque quos. Rerum delectus incidunt mollitia, dolor distinctio doloribus Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad earum excepturi deserunt eligendi ut omnis tempora quae, fugiat quos esse. Corrupti error nihil amet quod animi accusantium vitae esse dolor.</p>
+                <aside>
+                    <p>Artigo escrito por Lorem Ipsum da Silva</p>
+                </aside> 
+            </article>
+            <article>
+                <h2>Mais notícias misteriosas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla consequatur est eius dicta ipsam quibusdam cupiditate? Nisi atque placeat facere, saepe modi quia dicta eaque alias quas pariatur possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic molestias, id nesciunt exercitationem nemo eveniet vel aspernatur molestiae quasi explicabo sapiente harum alias quas doloremque dolorem rerum tenetur corrupti repudiandae! </p>
+                <aside>
+                    <p>Artigo escrito por Lorem Ipsum da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido apartir do curso de HTML5/CSS3 do CursoEmVídeo</p>
+    </footer>
+</body>
+</html>
