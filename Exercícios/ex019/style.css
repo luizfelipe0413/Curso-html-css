@@ -19,10 +19,26 @@ h1#titulo{
     background-color: rgb(173, 85, 85);
 }
 
-h1#subtitulo{
+.subtitulo{
     color: rgb(149, 14, 55);
 }
 
 h2{
     color: rgb(110, 54, 54);
 }   
+
+.básico{
+    font-style: italic;
+    color: rgb(57, 255, 57);
+}
+.intermediário{
+    font-style: italic;
+    color: rgb(235, 235, 42);
+}
+.avançado{
+    font-style: italic;
+    color: red;
+}
+.destacado{
+    background-color: rgb(68, 138, 199);
+}
