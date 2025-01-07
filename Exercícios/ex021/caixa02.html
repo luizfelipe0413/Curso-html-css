@@ -16,6 +16,7 @@
             padding: 10px 10px;
             text-align: center;
             margin: 15px 30px;
+            border-radius: 10px;
         }
         nav > p > a{
             text-decoration: none;
@@ -28,27 +29,50 @@
             margin: auto;
             border: 4px dotted black;
             text-align: center;
+            box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.439); 
         }
         article{
             text-align: justify;
             padding: 1px 15px;
             background-color: white;
             margin: 30px;
+            border-radius: 30px 0px;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.286);
+            /*Também existe border top left, top right, e por assim vai.
+            ou podem ser todas inclusas em um único border radius   */
         }
         article > aside{
             padding: 0px 30px;
-            background-color: rgb(100, 100, 100);
+            background-color: rgb(175, 174, 174);
             width: 290px;
         }
-        footer > p{
-            padding: 5px 30px 50px 30px ;
+        footer{
             background-color: brown;
-            margin: 0px;
-            text-align: right;
-
+            margin: 30px;
+            padding: 4px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.455);
         }
-
+        footer > p{
+            padding: 5px 30px 10px 30px ;
+            text-align: right;
+            margin: 0px;
+            
+        }
         
+        footer > div#bola{
+            display: none;
+            background-color: purple;
+            height: 50px;
+            width: 50px;
+            padding: 25px 25px;
+            margin: auto;
+            box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.487);
+            border-radius: 50%;
+        }
+        footer:hover > div#bola{
+            display: block;
+        }
         
     </style>
 </head>
@@ -71,20 +95,25 @@
                 <h2>Notícias Misteriosas</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a laudantium rerum perferendis consequuntur quod illum unde doloremque amet error qui, atque quos. Rerum delectus incidunt mollitia, dolor distinctio doloribus Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad earum excepturi deserunt eligendi ut omnis tempora quae, fugiat quos esse. Corrupti error nihil amet quod animi accusantium vitae esse dolor.</p>
                 <aside>
-                    <p>Artigo escrito por Lorem Ipsum da Silva</p>
+                    <p>Artigo escrito por Finibus Bonorum</p>
                 </aside> 
             </article>
             <article>
                 <h2>Mais notícias misteriosas</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla consequatur est eius dicta ipsam quibusdam cupiditate? Nisi atque placeat facere, saepe modi quia dicta eaque alias quas pariatur possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic molestias, id nesciunt exercitationem nemo eveniet vel aspernatur molestiae quasi explicabo sapiente harum alias quas doloremque dolorem rerum tenetur corrupti repudiandae! </p>
                 <aside>
-                    <p>Artigo escrito por Lorem Ipsum da Silva</p>
+                    <p>Artigo escrito por Finibus Bonorum</p>
                 </aside>
             </article>
         </section>
     </main>
     <footer>
         <p>Site desenvolvido apartir do curso de HTML5/CSS3 do CursoEmVídeo</p>
+        <div id="bola">
+            <p>Bola</p>
+        </div>
+        </div>
     </footer>
+    
 </body>
 </html>
