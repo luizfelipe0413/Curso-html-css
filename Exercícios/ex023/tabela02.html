@@ -12,10 +12,26 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th:nth-child(2){
+            width: 50px;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        thead{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         thead, tfoot{
             background-color: gray;
@@ -24,6 +40,9 @@
         .num{
             text-align: right;
         }
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
         
     </style>
 <body>
@@ -31,6 +50,7 @@
     <!-- 
     ANATOMIA PARA TABELAS GRANDES
     TABLE  
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -39,10 +59,11 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -157,11 +178,26 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>212 583 720</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num" ><strong>212 583 720</strong></td>
             </tr>
         </tfoot>
-
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, voluptatum, quod sint debitis tenetur quasi eaque exercitationem dolores, a soluta. Cupiditate consectetur aliquam ad neque sed esse magni deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quisquam impedit cum est eveniet corrupti! Quo numquam nihil, consequatur exercitationem omnis repudiandae assumenda sed blanditiis nemo quia soluta. Adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut voluptatibus, deserunt sit culpa voluptatem impedit facilis ratione ea hic similique saepe totam, nesciunt fuga repellat architecto labore nemo! Minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum, error debitis blanditiis optio ratione, fuga voluptate labore eligendi quibusdam suscipit excepturi. Amet placeat in, animi deleniti aliquid molestiae magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quisquam inventore? Ducimus eos quidem pariatur omnis distinctio blanditiis accusantium, in repellendus assumenda nobis cumque iure nesciunt est laboriosam ullam magnam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, voluptatum, quod sint debitis tenetur quasi eaque exercitationem dolores, a soluta. Cupiditate consectetur aliquam ad neque sed esse magni deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quisquam impedit cum est eveniet corrupti! Quo numquam nihil, consequatur exercitationem omnis repudiandae assumenda sed blanditiis nemo quia soluta. Adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut voluptatibus, deserunt sit culpa voluptatem impedit facilis ratione ea hic similique saepe totam, nesciunt fuga repellat architecto labore nemo! Minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum, error debitis blanditiis optio ratione, fuga voluptate labore eligendi quibusdam suscipit excepturi. Amet placeat in, animi deleniti aliquid molestiae magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quisquam inventore? Ducimus eos quidem pariatur omnis distinctio blanditiis accusantium, in repellendus assumenda nobis cumque iure nesciunt est laboriosam ullam magnam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, voluptatum, quod sint debitis tenetur quasi eaque exercitationem dolores, a soluta. Cupiditate consectetur aliquam ad neque sed esse magni deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quisquam impedit cum est eveniet corrupti! Quo numquam nihil, consequatur exercitationem omnis repudiandae assumenda sed blanditiis nemo quia soluta. Adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut voluptatibus, deserunt sit culpa voluptatem impedit facilis ratione ea hic similique saepe totam, nesciunt fuga repellat architecto labore nemo! Minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum, error debitis blanditiis optio ratione, fuga voluptate labore eligendi quibusdam suscipit excepturi. Amet placeat in, animi deleniti aliquid molestiae magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quisquam inventore? Ducimus eos quidem pariatur omnis distinctio blanditiis accusantium, in repellendus assumenda nobis cumque iure nesciunt est laboriosam ullam magnam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, voluptatum, quod sint debitis tenetur quasi eaque exercitationem dolores, a soluta. Cupiditate consectetur aliquam ad neque sed esse magni deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quisquam impedit cum est eveniet corrupti! Quo numquam nihil, consequatur exercitationem omnis repudiandae assumenda sed blanditiis nemo quia soluta. Adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut voluptatibus, deserunt sit culpa voluptatem impedit facilis ratione ea hic similique saepe totam, nesciunt fuga repellat architecto labore nemo! Minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum, error debitis blanditiis optio ratione, fuga voluptate labore eligendi quibusdam suscipit excepturi. Amet placeat in, animi deleniti aliquid molestiae magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quisquam inventore? Ducimus eos quidem pariatur omnis distinctio blanditiis accusantium, in repellendus assumenda nobis cumque iure nesciunt est laboriosam ullam magnam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, voluptatum, quod sint debitis tenetur quasi eaque exercitationem dolores, a soluta. Cupiditate consectetur aliquam ad neque sed esse magni deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quisquam impedit cum est eveniet corrupti! Quo numquam nihil, consequatur exercitationem omnis repudiandae assumenda sed blanditiis nemo quia soluta. Adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut voluptatibus, deserunt sit culpa voluptatem impedit facilis ratione ea hic similique saepe totam, nesciunt fuga repellat architecto labore nemo! Minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum, error debitis blanditiis optio ratione, fuga voluptate labore eligendi quibusdam suscipit excepturi. Amet placeat in, animi deleniti aliquid molestiae magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quisquam inventore? Ducimus eos quidem pariatur omnis distinctio blanditiis accusantium, in repellendus assumenda nobis cumque iure nesciunt est laboriosam ullam magnam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, voluptatum, quod sint debitis tenetur quasi eaque exercitationem dolores, a soluta. Cupiditate consectetur aliquam ad neque sed esse magni deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quisquam impedit cum est eveniet corrupti! Quo numquam nihil, consequatur exercitationem omnis repudiandae assumenda sed blanditiis nemo quia soluta. Adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut voluptatibus, deserunt sit culpa voluptatem impedit facilis ratione ea hic similique saepe totam, nesciunt fuga repellat architecto labore nemo! Minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum, error debitis blanditiis optio ratione, fuga voluptate labore eligendi quibusdam suscipit excepturi. Amet placeat in, animi deleniti aliquid molestiae magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quisquam inventore? Ducimus eos quidem pariatur omnis distinctio blanditiis accusantium, in repellendus assumenda nobis cumque iure nesciunt est laboriosam ullam magnam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, voluptatum, quod sint debitis tenetur quasi eaque exercitationem dolores, a soluta. Cupiditate consectetur aliquam ad neque sed esse magni deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quisquam impedit cum est eveniet corrupti! Quo numquam nihil, consequatur exercitationem omnis repudiandae assumenda sed blanditiis nemo quia soluta. Adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut voluptatibus, deserunt sit culpa voluptatem impedit facilis ratione ea hic similique saepe totam, nesciunt fuga repellat architecto labore nemo! Minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum, error debitis blanditiis optio ratione, fuga voluptate labore eligendi quibusdam suscipit excepturi. Amet placeat in, animi deleniti aliquid molestiae magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quisquam inventore? Ducimus eos quidem pariatur omnis distinctio blanditiis accusantium, in repellendus assumenda nobis cumque iure nesciunt est laboriosam ullam magnam.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, voluptatum, quod sint debitis tenetur quasi eaque exercitationem dolores, a soluta. Cupiditate consectetur aliquam ad neque sed esse magni deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quisquam impedit cum est eveniet corrupti! Quo numquam nihil, consequatur exercitationem omnis repudiandae assumenda sed blanditiis nemo quia soluta. Adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut voluptatibus, deserunt sit culpa voluptatem impedit facilis ratione ea hic similique saepe totam, nesciunt fuga repellat architecto labore nemo! Minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum, error debitis blanditiis optio ratione, fuga voluptate labore eligendi quibusdam suscipit excepturi. Amet placeat in, animi deleniti aliquid molestiae magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quisquam inventore? Ducimus eos quidem pariatur omnis distinctio blanditiis accusantium, in repellendus assumenda nobis cumque iure nesciunt est laboriosam ullam magnam.
+    </p>
 </body>
 </html>
