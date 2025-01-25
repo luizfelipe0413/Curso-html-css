@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Declarações  Retrato */
+
+@media screen and (orientation: portrait) {
+    body{
+        background: #233eff url(../imagens/cev-portrait.jpg) no-repeat scroll bottom center / contain;
+    }
+}

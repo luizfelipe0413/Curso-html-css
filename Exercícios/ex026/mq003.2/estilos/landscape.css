@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Declarações Paisagem */
+
+@media screen and (orientation: landscape) {
+    body{
+        background: #233eff url(../imagens/cev-landscape.jpg) no-repeat fixed bottom left / contain;
+    }
+}
