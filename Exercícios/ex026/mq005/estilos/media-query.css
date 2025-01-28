@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Telas maiores */
+
+@media screen and (min-width: 768px){
+    #burguer{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav li{
+        display: inline-block;
+    }
+    nav > ul > li > a{
+        border-radius: 5px 5px 0px 0px;
+        margin-left: 10px;
+        
+    }   
+    main{
+        max-width: 850px;
+    }
+}
