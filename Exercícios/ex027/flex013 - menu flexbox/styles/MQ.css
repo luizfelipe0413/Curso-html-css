@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    header{
+        flex-flow: column nowrap;
+        
+    }
+    header a{
+        width: 97%;
+    }
+    nav{
+        flex-flow: column nowrap;
+    }
+    #titulo{
+        flex-basis: 10px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    main{
+        width: 700px;
+    }
+    
+}
