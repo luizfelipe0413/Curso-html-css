@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+</head>
+    <style>
+        div.conteiner{
+            background-color: purple;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        div.item{
+            background-color: yellow;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+
+            flex-basis: 170px;
+            flex-shrink: 1;
+            flex-grow: 0;
+
+        }
+    </style>
+<body>
+    <div class="conteiner">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem asperiores natus aut libero porro culpa distinctio veritatis at, ullam quam quidem sunt tenetur est maiores accusantium reprehenderit? Vel, laborum reiciendis.</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati maiores porro error minima dolorem magni ea consectetur, laboriosam qui vitae asperiores, rerum molestias adipisci cum harum nesciunt velit in quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consequatur eos officia error recusandae aperiam optio dolores deleniti laborum aliquid. Voluptates quasi voluptatibus id qui eaque? Suscipit repellat hic inventore.</div>
+        <div class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas libero sapiente labore eius laudantium quae, doloribus ullam voluptate accusamus alias in, quas placeat, sequi officiis corporis ex optio explicabo dolor!
+        Laborum aliquid nisi dolorum illum odio repellendus voluptatum accusantium obcaecati sunt labore, placeat consectetur similique recusandae aperiam voluptatibus aspernatur tenetur magni temporibus laboriosam dolore sequi sed quod debitis amet! Officiis.
+        </div>
+    </div>
+</body>
+</html>

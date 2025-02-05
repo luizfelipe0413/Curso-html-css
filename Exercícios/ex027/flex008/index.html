@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+</head>
+    <style>
+        body{
+            background-color: rgb(86, 77, 61);
+        }
+        div.conteiner{
+            background-color: purple;
+            height: 400px;
+            border: 3px solid black;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.483);
+
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+            justify-content: center;
+            
+        }
+        div.item{
+            background-color: yellow;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+            
+
+             
+        }
+        div#i1{ /* A */
+            align-self: stretch;
+            flex-basis: 50px;
+        }
+        div#i2{/* B */
+            align-self: flex-start;
+        }
+        div#i3{/* C */
+            align-self: center;
+        }
+        div#i4{/* D */
+            align-self: flex-end;
+        }
+        div#i5{/* E */
+            align-self: stretch;
+            flex-basis: 66px;
+        }
+        div#i6{/* F */
+            align-self: flex-end;
+        }
+        div#i7{/* G */
+            align-self: center;
+        }
+        div#i8{/* H */
+            align-self: flex-start;
+        }
+        div#i9{ /* I */
+            align-self: stretch;
+            flex-basis: 50px;
+        }
+    </style>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+        <div class="item" id="i8">H</div>
+        <div class="item" id="i9">I</div>
+    </div>
+</body>
+</html>
