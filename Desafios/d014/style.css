@@ -1,0 +1,43 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 0.5fr 4fr .5fr;
+    grid-auto-flow: row;
+    gap: 5px;
+    height: 100vh;
+}
+.item{
+    align-content: center;
+    text-align: center;
+}
+header{
+    background-color: yellowgreen;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+nav{
+    background-color: violet;
+    grid-row: 2 / 3;
+    grid-column: 1/ -1;
+}
+.principal{
+    background-color: blueviolet;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+.secundaria{
+    background-color: coral;
+    grid-row: 3 / 4;
+    grid-column: 2 / -1;
+}
+footer{
+    background-color: darkgoldenrod;
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+}
